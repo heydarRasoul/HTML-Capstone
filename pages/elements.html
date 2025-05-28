@@ -8,15 +8,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <div class="top-navigation" id="top-nav-table">
+    <div class="site-header" id="main-header">
       <table align="center" width="1425" height="150px">
         <thead>
           <tr>
             <th
               width="200px"
-              align="right"
+              align="left"
               style="font-family: Arial, sans-serif"
             >
               <em><a href="../index.html">Twenty Twenty-Two</a></em>
@@ -43,10 +49,10 @@
     <br />
     <br />
 
-    <div class="text-wrapper" id="elements-section">
+    <div class="section-header" id="elements-section">
       <h1
         style="
-          margin-left: 100px;
+          margin-left: 200px;
           font-size: 50px;
           font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
             Cantarell, Helvetica Neue, sans-serif;
@@ -59,7 +65,7 @@
     <br />
     <br />
     <hr
-      style="margin-left: 100px; margin-right: 100px; border: 2px solid black"
+      style="margin-left: 200px; margin-right: 200px; border: 2px solid black"
     />
     <br />
     <br />
@@ -68,11 +74,11 @@
     <br />
     <br />
 
-    <div style="margin-left: 280px; margin-right: 250px" class="text-wrapper">
+    <div style="margin-left: 400px; margin-right: 400px" class="content-block">
       <div>
         <p
           style="
-            font-size: 25px;
+            font-size: 30px;
             font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
               Cantarell, Helvetica Neue, sans-serif;
           "
@@ -142,11 +148,11 @@
         <p><a href="#elements-section">[top]</a></p>
         <hr />
       </div>
-      <div>
+      <div class="typography-demo">
         <h1>Paragraph</h1>
         <div
           style="
-            font-size: 25px;
+            font-size: 30px;
             font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
               Cantarell, Helvetica Neue, sans-serif;
           "
@@ -197,7 +203,8 @@
         <h2 style="font-size: 30px">Definition list</h2>
       </div>
       <div
-        class="lists"
+        class="list-examples"
+        id="list-section"
         style="
           font-family: sans-serif, BlinkMacSystemFont, Roboto, Oxygen-Sans,
             Ubuntu, Cantarell, Helvetica Neue;
@@ -225,7 +232,8 @@
         <hr />
       </div>
       <div
-        class="form"
+        class="form-section"
+        id="form-layout"
         style="
           font-family: sans-serif, BlinkMacSystemFont, Roboto, Oxygen-Sans,
             Ubuntu, Cantarell, Helvetica Neue;
@@ -235,7 +243,7 @@
         <h4>Legend</h4>
         <p
           style="
-            font-size: 25px;
+            font-size: 30px;
             font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
               Cantarell, Helvetica Neue, sans-serif;
           "
@@ -254,7 +262,7 @@
         <h2 style="font-size: 40px">Form Element</h2>
         <p
           style="
-            font-size: 25px;
+            font-size: 30px;
             font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
               Cantarell, Helvetica Neue, sans-serif;
           "
@@ -265,14 +273,14 @@
           dui.
         </p>
         <div>
-          <form>
-            <div class="form-wrapper" id="user-text-field">
+          <form class="form-section" id="form-layout-2">
+            <div class="form-section" id="text-input-group">
               <label for="user-text">Text Field:</label><br /><br />
               <input type="text" id="user-text" name="user_text" />
             </div>
             <br />
             <br />
-            <div class="form-wrapper" id="comment-field">
+            <div class="form-section" id="textarea-group">
               <label for="text-area">Text Area:</label><br /><br />
               <textarea
                 id="text-area"
@@ -283,7 +291,7 @@
             </div>
             <br />
             <br />
-            <div class="form-wrapper" id="drop-down-field">
+            <div class="form-section" id="select-group">
               <label for="select-element">Select Element:</label><br /><br />
               <select name="select-element">
                 <optgroup label="Option Group 1">
@@ -300,7 +308,7 @@
             </div>
             <br />
             <br />
-            <div class="form-wrapper" id="radio-field">
+            <div class="form-section" id="radio-group">
               <label for="radio">Radio Buttons:</label><br />
               <br />
 
@@ -328,7 +336,7 @@
             </div>
             <br />
             <br />
-            <div class="form-wrapper" id="checkbox-field">
+            <div class="form-section" id="checkbox-group">
               <label for="checkbox-1">Checkboxes:</label><br /><br />
               <label for="checkbox-1">Radio 1</label>
               <input
@@ -353,7 +361,12 @@
               />
             </div>
             <br /><br />
-            <div class="form-wrapper" id="password-field">
+            <div
+              class="form-section"
+              id="password-group
+
+            "
+            >
               <label for="user-password">Password:</label><br /><br />
               <input
                 type="password"
@@ -363,7 +376,7 @@
               />
             </div>
             <br /><br />
-            <div class="form-wrapper" id="upload-field">
+            <div class="form-section" id="file-upload-group">
               <label for="file">File Input:</label><br />
               <input type="file" id="file" name="file" />
             </div>
@@ -378,12 +391,14 @@
         </div>
         <hr />
         <div>
-          <h2 style="font-size: 40px">Tables</h2>
+          <h2 style="font-size: 50px">Tables</h2>
           <br />
 
           <div
+            class="table-section"
+            id="table-demo"
             style="
-              font-size: 25px;
+              font-size: 30px;
               font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
                 Cantarell, Helvetica Neue, sans-serif;
             "
@@ -420,14 +435,14 @@
             <hr />
           </div>
           <br />
-          <div>
-            <h2 style="font-size: 40px">
+          <div class="misc-elements" id="misc-demo">
+            <h2 style="font-size: 50px">
               Misc Stuff – abbr, acronym, pre, code, sub, sup, etc.
             </h2>
             <div>
               <p
                 style="
-                  font-size: 25px;
+                  font-size: 30px;
                   font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu,
                     Cantarell, Helvetica Neue, sans-serif;
                 "
@@ -450,9 +465,9 @@
     </div>
     <div
       style="
-        margin-left: 280px;
+        margin-left: 400px;
         margin-right: 0px;
-        font-size: 25px;
+        font-size: 30px;
         font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
           Helvetica Neue, sans-serif;
       "
@@ -474,9 +489,9 @@
     </div>
     <div
       style="
-        margin-left: 280px;
+        margin-left: 400px;
         margin-right: 0px;
-        font-size: 25px;
+        font-size: 30px;
         font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
           Helvetica Neue, sans-serif;
       "
@@ -486,11 +501,11 @@
 
       <p style="font-size: 15px"><a href="#elements-section">[top]</a></p>
     </div>
-    <br />
+    <br /><br /><br /><br />
 
     <table
       style="
-        margin-left: 280px;
+        margin-left: 400px;
         font-size: 15px;
         font-family: BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
           Helvetica Neue, sans-serif;
@@ -500,10 +515,43 @@
         <tr>
           <th align="left" width="200px">September 5, 2008</th>
           <th width="200px">Theme Admin</th>
-          <th width="200px">Uncategorized</th>
+          <th width="200px" style="text-decoration: underline">
+            Uncategorized
+          </th>
         </tr>
       </thead>
     </table>
     <br /><br /><br /><br />
+    <hr
+      style="margin-left: 400px; margin-right: 400px; border: 2px solid black"
+    />
+    <br /><br /><br /><br />
+
+    <footer>
+      <div class="site-footer" id="main-footer">
+        <table
+          align="center"
+          height="100px"
+          style="padding-left: 250px; padding-right: 250px; width: 100%"
+        >
+          <thead>
+            <tr>
+              <th align="left" style="font-family: Arial, sans-serif">
+                <a href="#top-nav-table"><em>Twenty Twenty-Two</em></a>
+              </th>
+              <th align="right" style="font-family: Arial, sans-serif">
+                Proudly powered by<a
+                  href="https://wordpress.org/"
+                  target="_blank"
+                  style="text-decoration: underline"
+                >
+                  WordPress</a
+                >
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </footer>
   </body>
 </html>
